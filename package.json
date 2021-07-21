@@ -1,0 +1,30 @@
+{
+  "name": "cof-generator",
+  "version": "1.0.5",
+  "description": "Generador para express",
+  "scripts": {
+    "start": "node ./bin/app.js"
+  },
+  "keywords": [
+    "cof",
+    "generator",
+    "express"
+  ],
+  "author": "Danicof",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  },
+  "main": "./bin/app.js",
+  "preferGlobal": true,
+  "bin": {
+    "cofgenerator": "./bin/app.js"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "files": [
+    "bin/",
+    "templates/"
+  ]
+}
