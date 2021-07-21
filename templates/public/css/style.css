@@ -1,0 +1,33 @@
+body{
+  font-family: sans-serif;
+}
+.bg-dark{
+  background-color: #1a1a1a;
+}
+.c-white{
+  color: #fff;
+}
+.c-green{
+  color: #90c73e;
+}
+
+.f-display{
+  display: flex;
+}
+
+.f-main-y{
+  flex-direction: column;
+}
+
+.f-center{
+  align-items: center;
+  justify-content: center;
+}
+
+.mh-100vh{
+  min-height: 100vh;
+}
+
+.of-hidden{
+  overflow: hidden;
+}

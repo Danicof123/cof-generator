@@ -27,7 +27,7 @@ const inquirer = require('inquirer'),
 
     app = await inquirer.prompt({
       name: 'engine',
-      message: 'Escoge un view engine para tu app',
+      message: 'Escoge un view engine para tu app [pug | ejs]',
       default: 'pug'
     })
     createViews(app.engine);

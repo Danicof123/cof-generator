@@ -1,6 +1,6 @@
 {
   "name": "cof-generator",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Generador para express",
   "scripts": {
     "start": "node ./bin/app.js"
