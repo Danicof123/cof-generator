@@ -10,7 +10,7 @@ const inquirer = require('inquirer'),
   try{
     let app = await inquirer.prompt({
       name: 'name',
-      message: 'Escribe un nombre para la aplicación',
+      message: 'Write a name for the application ',
       default: 'myApp'
     })
 
@@ -20,14 +20,14 @@ const inquirer = require('inquirer'),
 
     app = await inquirer.prompt({
       name: 'description',
-      message: 'Escribe una breve descripción para tu app',
+      message: 'Write a short description for your app ',
       default: '...'
     })
     pkg.description = app.description;
 
     app = await inquirer.prompt({
       name: 'engine',
-      message: 'Escoge un view engine para tu app [pug | ejs]',
+      message: 'Choose a view engine for your app [pug | ejs]',
       default: 'pug'
     })
     createViews(app.engine);
@@ -35,7 +35,7 @@ const inquirer = require('inquirer'),
 
     app = await inquirer.prompt({
       name: 'port',
-      message: 'Escoge un puerto para probar tu app',
+      message: 'Choose a port to test your app',
       default: 3000
     })
     pkg.port = app.port;
@@ -44,10 +44,10 @@ const inquirer = require('inquirer'),
 
     console.log(`
     
-    La instalación de \x1b[36m${pkg.name}\x1b[0m resultó satisfactoria.
-    Ejecuta \x1b[33m cd ${pkg.name}\x1b[0m para ingresar a la carpeta del proyecto.
-    Ejecuta \x1b[33m npm install \x1b[0m para instalar las dependencias necesarias.
-    Ejecuta \x1b[33m npm start \x1b[0m para iniciar la aplicación.
+    The installation of \x1b[36m${pkg.name}\x1b[0m was successful.
+    Run \x1b[33m cd ${pkg.name}\x1b[0m to enter the project folder.
+    Run \x1b[33m npm install \x1b[0m to install the necessary dependencies. 
+    Run \x1b[33m npm start \x1b[0m to start the application.
       
       `)
   }

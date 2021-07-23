@@ -50,7 +50,7 @@ const createApp = (engine, port) => {
         favicon = require('serve-favicon'),
         path = require('path'),
         //variables de directorio
-        faviconDir = path.join(__dirname, '..', 'public', 'images', 'favicof.png'),
+        faviconDir = path.join(__dirname, '..', 'public', 'images', 'favicon.png'),
         viewDir = path.join(__dirname, 'views'),
         staticDir = express.static(path.join(__dirname, '..','public')),
         //configuración de express

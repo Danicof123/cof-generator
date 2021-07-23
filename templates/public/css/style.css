@@ -31,3 +31,7 @@ body{
 .of-hidden{
   overflow: hidden;
 }
+h2>a{
+  color: #3498db;
+  text-decoration: inherit;
+}
